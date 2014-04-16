@@ -30,8 +30,8 @@
 <body>
 
 	<div>
-		<p>Does<input type="text" placeholder="@twitterhandle" id="twhandle"/></p>
-		<p>work for &amp;<span>yet</span> yet?</p>
+		<p>Does<input type="text" placeholder="@webdevstudios" id="twhandle"/></p>
+		<p>work for &amp;<span>WebDevStudios</span> yet?</p>
 		<p><input type="button" id="check" value="Check" onclick="checkTwitter('twhandle');"/>
 	</div>
 
@@ -42,7 +42,7 @@
 	function checkTwitter(handle) {
 		var name = document.getElementById(handle).value;
 		console.log('handle: ' + name);
-		var handles = ['adambrault', 'renrutnnej', 'ericzanol', 'wraithgar', 'adam_baldwin', 'henrikjoreteg', 'philip_roberts', 'quitlahok', 'mike_speegle', 'obensource', 'nrrrdcore', 'danielchbarnes', 'sarahjbray', 'fritzy', 'stephaniemaier', 'jennadear09', 'stpeter', 'lynnandtonic', 'jon_lamendola', 'daviddias', 'lginman46', 'lukekarrys', 'aaronmccall', 'bear', '_crossdiver', 'katphurrrs', 'lancestout', 'missfelony', 'amydearest', 'fox', 'hjon', 'shadowking', 'markbrault'];
+		var handles = ['camdensegal', 'MelHop91', 'CristinaCannon2', 'SimonWebDesign', 'pmgarman', 'coreymcollins', 'scottkclark', 'sarahpressler', 'OneFineJay', 'Jtsternberg', 'aprilwilliamsba', 'funstacy', 'bradparbs', 'rzen', 'GregRickaby', 'trishacodes', 'bmess', 'modemlooper', 'williamsba', 'LisaSabinWilson'];
 		if(handles.indexOf(name) != -1)
 		{
 			alertYes(name);
@@ -55,12 +55,12 @@
 	function alertYes(name){
 		console.log("yes");
 		el = document.getElementById("overlay");
-		document.getElementById('msg').innerText = name + " DOES work for &yet"; 
+		document.getElementById('msg').innerText = name + " DOES work for &yet";
 		toggleOverlay();
 	}
 	function alertNo(name){
 		console.log("no");
-		document.getElementById('msg').innerText = name + " does NOT work for &yet, yet"; 
+		document.getElementById('msg').innerText = name + " does NOT work for &yet, yet";
 		toggleOverlay();
 	}
 	function toggleOverlay()
